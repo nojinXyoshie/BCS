@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/white"
+    android:clickable="true"
+    android:orientation="vertical"
+    android:foreground="?attr/selectableItemBackground"
+    android:paddingTop="10dp"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp">
+
+    <ImageView
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_centerVertical="true"
+        android:background="@drawable/profile"
+        android:layout_marginRight="10dp"/>
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/thumbnail"
+        android:layout_width="@dimen/placeholder_image"
+        android:layout_height="@dimen/placeholder_image"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="@dimen/padding_10" />
+
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/thumbnail"
+        android:ellipsize="end"
+        android:fontFamily="sans-serif-medium"
+        android:maxLines="1"
+        android:text="Name"
+        android:textColor="@color/item_name"
+        android:textSize="@dimen/name" />
+
+    <TextView
+        android:id="@+id/projectOt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/name"
+        android:layout_toRightOf="@id/thumbnail"
+        android:maxLines="1"
+        android:textColor="@color/chef"
+        android:text="Project"
+        android:textSize="@dimen/chef" />
+
+    <TextView
+        android:id="@+id/totalOt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/projectOt"
+        android:layout_toRightOf="@id/thumbnail"
+        android:maxLines="1"
+        android:text="Total Overtime"
+        android:textColor="@color/chef"
+        android:textSize="@dimen/chef" />
+
+    <TextView
+        android:id="@+id/date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/totalOt"
+        android:layout_toEndOf="@+id/thumbnail"
+        android:ellipsize="end"
+        android:maxLines="3"
+        android:text="tgl"
+        android:textColor="@color/description"
+        android:textSize="@dimen/timestamp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/roundedcorner"
+        android:backgroundTint="@color/orange"
+        android:layout_alignTop="@+id/imageView7"
+        android:ellipsize="end"
+        android:maxLines="3"
+        android:text="status"
+        android:textColor="@color/white"
+        android:textSize="@dimen/timestamp"
+        android:textStyle="bold" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="#FF909090"
+        android:layout_marginTop="79dp"/>
+
+</RelativeLayout>

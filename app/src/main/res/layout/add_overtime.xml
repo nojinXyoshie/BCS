@@ -1,0 +1,378 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include layout="@layout/app_bar_add_overtime" />
+    <Button
+        android:id="@+id/btnclose"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:background="@drawable/ic_action_back"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="5dp"/>
+
+    <Button
+        android:id="@+id/buttonSend"
+        android:layout_width="20dp"
+        android:layout_height="25dp"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/ic_action_send"
+        android:layout_marginTop="17dp"
+        android:layout_marginRight="13dp"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="56dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="500dp"
+            android:orientation="horizontal"
+            android:paddingTop="10dp">
+
+            <TextView
+                android:id="@+id/att_dt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/overtimeDate"
+                android:layout_alignBottom="@+id/overtimeDate"
+                android:layout_alignStart="@+id/cout"
+                android:text="Attendance Date" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/att_dt"
+                android:layout_alignBottom="@+id/att_dt"
+                android:layout_alignStart="@+id/textView25"
+                android:text=":" />
+
+            <EditText
+                android:id="@+id/overtimeDate"
+                android:layout_width="190dp"
+                android:layout_height="35dp"
+                android:layout_marginLeft="150dp"
+                android:layout_marginTop="7dp"
+                android:background="@drawable/rounded_edittext"
+                android:editable="false"
+                android:padding="5dp"
+                android:textSize="15dp" />
+
+            <TextView
+                android:id="@+id/day"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/overtimeDay"
+                android:layout_alignBottom="@+id/overtimeDay"
+                android:layout_alignStart="@+id/cout"
+                android:text="Day" />
+
+            <TextView
+                android:id="@+id/textView35"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/day"
+                android:layout_alignBottom="@+id/day"
+                android:layout_alignStart="@+id/textView25"
+                android:text=":" />
+
+            <Spinner
+                android:id="@+id/overtimeDay"
+                android:layout_width="190dp"
+                android:layout_height="35dp"
+                android:layout_marginTop="7dp"
+                android:layout_alignStart="@+id/overtimeDate"
+                android:layout_below="@+id/overtimeDate"
+                android:background="@drawable/style_spinner"
+                android:entries="@array/chooseDay"
+                android:padding="5dp"
+                android:textSize="13dp" />
+
+            <TextView
+                android:id="@+id/prjct"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/projectOt"
+                android:layout_alignBottom="@+id/projectOt"
+                android:layout_alignStart="@+id/cstmr"
+                android:text="Project" />
+
+            <TextView
+                android:id="@+id/textView25"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/prjct"
+                android:layout_alignBottom="@+id/prjct"
+                android:layout_alignStart="@+id/textView26"
+                android:text=":" />
+
+            <EditText
+                android:id="@+id/projectOt"
+                android:layout_width="190dp"
+                android:layout_height="35dp"
+                android:layout_alignStart="@+id/customer"
+                android:layout_below="@+id/overtimeDay"
+                android:layout_marginTop="7dp"
+                android:background="@drawable/rounded_edittext"
+                android:padding="5dp"
+                android:textSize="15dp" />
+
+            <TextView
+                android:id="@+id/cstmr"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/customer"
+                android:layout_alignBottom="@+id/customer"
+                android:layout_alignStart="@+id/actvt"
+                android:text="Customer" />
+
+            <TextView
+                android:id="@+id/textView26"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/cstmr"
+                android:layout_alignBottom="@+id/cstmr"
+                android:layout_alignStart="@+id/textView29"
+                android:text=":" />
+
+            <EditText
+                android:id="@+id/customer"
+                android:layout_width="190dp"
+                android:layout_height="35dp"
+                android:layout_alignStart="@+id/activity"
+                android:layout_below="@+id/projectOt"
+                android:layout_marginTop="7dp"
+                android:background="@drawable/rounded_edittext"
+                android:padding="5dp"
+                android:textSize="15dp" />
+
+            <TextView
+                android:id="@+id/actvt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/activity"
+                android:layout_alignBottom="@+id/activity"
+                android:layout_alignStart="@+id/cin"
+                android:text="Activity" />
+
+            <TextView
+                android:id="@+id/textView29"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/actvt"
+                android:layout_alignStart="@+id/textView27"
+                android:text=":" />
+
+            <EditText
+                android:id="@+id/activity"
+                android:layout_width="190dp"
+                android:layout_height="55dp"
+                android:layout_alignStart="@+id/checkIn"
+                android:layout_below="@+id/customer"
+                android:layout_marginTop="7dp"
+                android:background="@drawable/rounded_edittext"
+                android:padding="5dp"
+                android:textSize="15dp" />
+
+            <TextView
+                android:id="@+id/cin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/checkIn"
+                android:layout_alignBottom="@+id/checkIn"
+                android:layout_alignEnd="@+id/textView24"
+                android:text="Check In" />
+
+            <TextView
+                android:id="@+id/textView27"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/cin"
+                android:layout_alignBottom="@+id/cin"
+                android:layout_alignStart="@+id/textView28"
+                android:text=":" />
+
+            <EditText
+                android:id="@+id/checkIn"
+                android:layout_width="190dp"
+                android:layout_height="35dp"
+                android:layout_alignStart="@+id/checkOut"
+                android:layout_below="@+id/activity"
+                android:layout_marginTop="7dp"
+                android:background="@drawable/rounded_edittext"
+                android:editable="false"
+                android:padding="5dp"
+                android:textSize="15dp" />
+
+            <TextView
+                android:id="@+id/cout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/checkOut"
+                android:layout_alignBottom="@+id/checkOut"
+                android:layout_alignStart="@+id/wrkngtm"
+                android:text="Check Out" />
+
+            <TextView
+                android:id="@+id/textView28"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/cout"
+                android:layout_alignBottom="@+id/cout"
+                android:layout_alignStart="@+id/textView32"
+                android:text=":" />
+
+            <EditText
+                android:id="@+id/checkOut"
+                android:layout_width="190dp"
+                android:layout_height="35dp"
+                android:layout_alignStart="@+id/total"
+                android:layout_below="@+id/checkIn"
+                android:layout_marginTop="7dp"
+                android:background="@drawable/rounded_edittext"
+                android:editable="false"
+                android:padding="5dp"
+                android:textSize="15dp" />
+
+            <TextView
+                android:id="@+id/wrkngtm"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/total"
+                android:layout_alignBottom="@+id/total"
+                android:layout_alignStart="@+id/brt"
+                android:text="Working Time" />
+
+            <TextView
+                android:id="@+id/textView32"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/wrkngtm"
+                android:layout_alignBottom="@+id/wrkngtm"
+                android:layout_alignStart="@+id/textView33"
+                android:text=":" />
+
+            <EditText
+                android:id="@+id/total"
+                android:layout_width="190dp"
+                android:layout_height="35dp"
+                android:layout_alignStart="@+id/bruto"
+                android:layout_below="@+id/checkOut"
+                android:layout_marginTop="7dp"
+                android:background="@drawable/rounded_edittext"
+                android:editable="false"
+                android:inputType="number"
+                android:padding="5dp"
+                android:textSize="15dp" />
+
+            <TextView
+                android:id="@+id/brt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/bruto"
+                android:layout_alignBottom="@+id/bruto"
+                android:layout_alignStart="@+id/nt"
+                android:text="Bruto" />
+
+            <TextView
+                android:id="@+id/textView33"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/brt"
+                android:layout_alignBottom="@+id/brt"
+                android:layout_alignStart="@+id/textView34"
+                android:text=":" />
+
+            <EditText
+                android:id="@+id/bruto"
+                android:layout_width="190dp"
+                android:layout_height="35dp"
+                android:layout_alignStart="@+id/nett"
+                android:layout_below="@+id/total"
+                android:layout_marginTop="7dp"
+                android:background="@drawable/rounded_edittext"
+                android:inputType="number"
+                android:padding="5dp"
+                android:textSize="15dp" />
+
+            <TextView
+                android:id="@+id/nt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/nett"
+                android:layout_alignBottom="@+id/nett"
+                android:layout_alignStart="@+id/textView24"
+                android:text="Nett" />
+
+            <TextView
+                android:id="@+id/textView34"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/nt"
+                android:layout_alignBottom="@+id/nt"
+                android:layout_alignStart="@+id/textView31"
+                android:text=":" />
+
+            <EditText
+                android:id="@+id/nett"
+                android:layout_width="190dp"
+                android:layout_height="35dp"
+                android:layout_alignStart="@+id/linearLayout2"
+                android:layout_below="@+id/bruto"
+                android:layout_marginTop="7dp"
+                android:background="@drawable/rounded_edittext"
+                android:inputType="number"
+                android:padding="5dp"
+                android:textSize="15dp" />
+
+            <Button
+                android:id="@+id/btn_check"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignTop="@+id/textView31"
+                android:layout_marginStart="17dp"
+                android:text="Check nominal" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=":"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="135dp"
+                android:layout_below="@id/nt"
+                android:id="@+id/textView31" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_below="@id/nett"
+                android:layout_alignStart="@id/overtimeDate"
+                android:id="@+id/linearLayout2">
+
+                <TextView
+                    android:id="@+id/textView19"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="5dp"
+                    android:paddingTop="9dp"
+                    android:text="Rp."
+                    android:textSize="15dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/nominal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp"
+                    android:text=""
+                    android:textSize="15dp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>

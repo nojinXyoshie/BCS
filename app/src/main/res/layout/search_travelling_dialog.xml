@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/white">
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="350dp"
+        android:layout_height="0.5dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="12dp"
+        android:background="@color/orange" />
+
+    <TextView
+        android:id="@+id/textView13"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/searchPeriod"
+        android:layout_below="@+id/view"
+        android:layout_marginTop="22dp"
+        android:text="Period"
+        android:textStyle="bold"/>
+
+    <EditText
+        android:id="@+id/searchPeriod"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/view"
+        android:layout_below="@+id/textView13"
+        android:layout_marginStart="30dp"
+        android:editable="false"
+        android:padding="5dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/style_spinner"
+        android:text="--All--"
+        android:textSize="16dp" />
+
+    <TextView
+        android:id="@+id/textView14"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/searchStatusTravelling"
+        android:layout_below="@+id/searchPeriod"
+        android:layout_marginTop="19dp"
+        android:text="Status"
+        android:textStyle="bold" />
+
+    <Spinner
+        android:id="@+id/searchStatusTravelling"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/searchPeriod"
+        android:layout_below="@+id/textView14"
+        android:layout_marginTop="9dp"
+        android:background="@drawable/style_spinner"
+        android:entries="@array/searchStatusTravelling" />
+
+
+</RelativeLayout>

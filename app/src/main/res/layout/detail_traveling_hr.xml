@@ -1,0 +1,879 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/grey">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="10dp"
+            android:layout_margin="10dp"
+            android:backgroundTint="@color/white"
+            android:foreground="?android:attr/selectableItemBackground">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp">
+
+                <ImageView
+                    android:id="@+id/bg"
+                    android:layout_width="match_parent"
+                    android:layout_height="120dp"
+                    android:background="@drawable/buildings" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/ic_action_close"
+                    android:backgroundTint="@color/orange" />
+
+                <ImageView
+                    android:id="@+id/imageView6"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="80dp"
+                    android:background="@drawable/profile" />
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/circleImageView"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="80dp" />
+
+                <TextView
+                    android:id="@+id/name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="160dp"
+                    android:text="Name"
+                    android:textColor="@color/orange"
+                    android:textSize="20dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/nik"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/name"
+                    android:layout_centerHorizontal="true"
+                    android:text="NIK"
+                    android:textSize="18dp" />
+
+            </RelativeLayout>
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:backgroundTint="@color/white"
+            android:foreground="?android:attr/selectableItemBackground">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:paddingBottom="10dp">
+
+                <ImageView
+                    android:id="@+id/imageView13"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:layout_alignBottom="@+id/date"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginStart="18dp"
+                    android:background="@drawable/ic_action_date"
+                    android:backgroundTint="@color/black_overlay" />
+
+                <TextView
+                    android:id="@+id/textView30"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginStart="9dp"
+                    android:layout_toEndOf="@+id/imageView13"
+                    android:text="TRAVELING DATE"
+                    android:textColor="@color/orange"
+                    android:textSize="12dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/date"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignStart="@+id/textView30"
+                    android:layout_below="@+id/textView30"
+                    android:text="Date" />
+
+                <ImageView
+                    android:id="@+id/imageView17"
+                    android:layout_width="30dp"
+                    android:layout_height="33dp"
+                    android:layout_alignTop="@+id/textView36"
+                    android:layout_marginLeft="20dp"
+                    android:background="@drawable/ic_action_from"
+                    android:backgroundTint="@color/chef" />
+
+                <TextView
+                    android:id="@+id/textView36"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignStart="@+id/date"
+                    android:layout_below="@+id/date"
+                    android:layout_marginTop="19dp"
+                    android:text="FROM"
+                    android:textColor="@color/orange"
+                    android:textSize="12dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/from"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignStart="@+id/textView36"
+                    android:layout_below="@+id/textView36"
+                    android:text="From" />
+
+                <ImageView
+                    android:id="@+id/imageView18"
+                    android:layout_width="30dp"
+                    android:layout_height="33dp"
+                    android:layout_alignStart="@+id/imageView17"
+                    android:layout_below="@+id/from"
+                    android:layout_marginTop="16dp"
+                    android:background="@drawable/ic_action_to"
+                    android:backgroundTint="@color/chef" />
+
+                <TextView
+                    android:id="@+id/textView37"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignStart="@+id/from"
+                    android:layout_alignTop="@+id/imageView18"
+                    android:text="TO"
+                    android:textColor="@color/orange"
+                    android:textSize="12dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/to"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignStart="@+id/textView37"
+                    android:layout_below="@+id/textView37"
+                    android:text="To"/>
+
+                <ImageView
+                    android:id="@+id/imageView19"
+                    android:layout_width="27dp"
+                    android:layout_height="27dp"
+                    android:layout_alignStart="@+id/imageView13"
+                    android:layout_below="@+id/to"
+                    android:layout_marginTop="18dp"
+                    android:background="@drawable/ic_action_total_days"
+                    android:backgroundTint="@color/chef" />
+
+                <TextView
+                    android:id="@+id/textView38"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignStart="@+id/to"
+                    android:layout_below="@+id/to"
+                    android:layout_marginTop="15dp"
+                    android:text="TOTAL DAYS"
+                    android:textColor="@color/orange"
+                    android:textSize="12dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/totalDays"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignStart="@+id/textView38"
+                    android:layout_below="@+id/textView38"
+                    android:text="Total Days" />
+
+                <ImageView
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_alignEnd="@+id/imageView19"
+                    android:layout_alignTop="@+id/textView39"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/ic_action_rate"
+                    android:backgroundTint="@color/chef"
+                    android:id="@+id/imageView20" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignStart="@+id/totalDays"
+                    android:layout_below="@+id/totalDays"
+                    android:layout_marginTop="14dp"
+                    android:text="RATE"
+                    android:textColor="@color/orange"
+                    android:textSize="12dp"
+                    android:textStyle="bold"
+                    android:id="@+id/textView39" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignStart="@+id/textView39"
+                    android:layout_below="@+id/textView39"
+                    android:text="Rp."
+                    android:id="@+id/textView45" />
+
+                <TextView
+                    android:id="@+id/rate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@+id/textView45"
+                    android:layout_alignBottom="@+id/textView45"
+                    android:layout_toEndOf="@+id/textView45"
+                    android:text=" Rate" />
+
+                <ImageView
+                    android:id="@+id/imageView21"
+                    android:layout_width="27dp"
+                    android:layout_height="27dp"
+                    android:layout_above="@+id/textView42"
+                    android:layout_alignEnd="@+id/imageView20"
+                    android:layout_marginBottom="7dp"
+                    android:background="@drawable/ic_action_budget"
+                    android:backgroundTint="@color/chef" />
+
+                <TextView
+                    android:id="@+id/textView41"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignStart="@+id/textView40"
+                    android:layout_below="@+id/textView45"
+                    android:layout_marginTop="14dp"
+                    android:text="BUDGET"
+                    android:textColor="@color/orange"
+                    android:textSize="12dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/textView40"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@+id/budget"
+                    android:layout_alignBottom="@+id/budget"
+                    android:layout_alignStart="@+id/textView45"
+                    android:text="Rp." />
+
+                <EditText
+                    android:id="@+id/budget"
+                    android:layout_width="155dp"
+                    android:layout_height="25dp"
+                    android:layout_below="@+id/textView41"
+                    android:layout_marginTop="7dp"
+                    android:layout_toEndOf="@+id/textView40"
+                    android:background="@drawable/rounded_edittext"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:text="Budget"
+                    android:textColor="@color/chef"
+                    android:textSize="14dp" />
+
+                <Button
+                    android:id="@+id/edit"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_alignBaseline="@+id/budget"
+                    android:layout_alignBottom="@+id/budget"
+                    android:layout_marginStart="10dp"
+                    android:layout_toEndOf="@+id/budget"
+                    android:background="@drawable/roundedcornerbutton"
+                    android:drawableRight="@drawable/ic_action_edit" />
+
+                <ImageView
+                    android:id="@+id/imageView22"
+                    android:layout_width="28dp"
+                    android:layout_height="28dp"
+                    android:layout_alignStart="@+id/imageView21"
+                    android:layout_alignTop="@+id/textView42"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/ic_action_project"
+                    android:backgroundTint="@color/chef" />
+
+                <TextView
+                    android:id="@+id/textView42"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignStart="@+id/textView40"
+                    android:layout_below="@+id/textView40"
+                    android:layout_marginTop="16dp"
+                    android:text="PROJECT"
+                    android:textColor="@color/orange"
+                    android:textSize="12dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/project"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignStart="@+id/textView42"
+                    android:layout_below="@+id/textView42"
+                    android:text="Project" />
+
+                <ImageView
+                    android:layout_width="26dp"
+                    android:layout_height="28dp"
+                    android:layout_alignEnd="@+id/imageView21"
+                    android:layout_alignTop="@+id/textView43"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/ic_action_status"
+                    android:backgroundTint="@color/chef"
+                    android:id="@+id/imageView23" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignStart="@+id/project"
+                    android:layout_below="@+id/project"
+                    android:layout_marginTop="14dp"
+                    android:text="STATUS"
+                    android:textColor="@color/orange"
+                    android:textSize="12dp"
+                    android:textStyle="bold"
+                    android:id="@+id/textView43" />
+
+                <TextView
+                    android:id="@+id/status"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignStart="@+id/textView43"
+                    android:layout_below="@+id/textView43"
+                    android:text="Status" />
+
+
+            </RelativeLayout>
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="10dp"
+            android:layout_margin="10dp"
+            android:backgroundTint="@color/white"
+            android:foreground="?android:attr/selectableItemBackground">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:paddingBottom="10dp">
+
+                <ImageView
+                    android:id="@+id/imageView24"
+                    android:layout_width="25dp"
+                    android:layout_height="30dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginStart="18dp"
+                    android:background="@drawable/ic_action_note"
+                    android:backgroundTint="@color/chef" />
+
+                <TextView
+                    android:id="@+id/textView44"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginStart="19dp"
+                    android:layout_marginTop="7dp"
+                    android:layout_toEndOf="@+id/imageView24"
+                    android:text="NOTE"
+                    android:textColor="@color/orange"
+                    android:textSize="12dp"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/note"
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignStart="@+id/textView44"
+                    android:layout_below="@+id/imageView24"
+                    android:background="@drawable/rounded_edittext"
+                    android:padding="10dp"
+                    android:textColor="@color/chef"
+                    android:text="Note"
+                    android:textSize="14dp" />
+
+
+            </RelativeLayout>
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/cvCancelButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:backgroundTint="@color/white"
+            android:foreground="?android:attr/selectableItemBackground">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp">
+
+                <Button
+                    android:id="@+id/approve"
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:background="@drawable/roundedcornerbutton_approve"
+                    android:text="Approve"
+                    android:textColor="#224D17"
+                    android:textSize="10dp" />
+
+                <Button
+                    android:id="@+id/reject"
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginTop="44dp"
+                    android:background="@drawable/rondedcornerbutton_cancel"
+                    android:text="Reject"
+                    android:textColor="@color/red"
+                    android:textSize="10dp" />
+            </RelativeLayout>
+
+        </android.support.v7.widget.CardView>
+    </LinearLayout>
+
+</ScrollView>
+
+<!--<?xml version="1.0" encoding="utf-8"?>-->
+<!--<android.support.constraint.ConstraintLayout-->
+    <!--xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent">-->
+
+    <!--<ScrollView-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent">-->
+        <!--<RelativeLayout-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:orientation="vertical">-->
+
+            <!--<RelativeLayout-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content">-->
+
+                <!--<ImageView-->
+                    <!--android:id="@+id/bg"-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="150dp"-->
+                    <!--android:background="@drawable/bg"/>-->
+
+                <!--<ImageView-->
+                    <!--android:layout_width="70dp"-->
+                    <!--android:layout_height="70dp"-->
+                    <!--android:background="@drawable/profile"-->
+                    <!--android:id="@+id/imageView6"-->
+                    <!--android:layout_centerHorizontal="true"-->
+                    <!--android:layout_marginTop="20dp"/>-->
+
+                <!--<de.hdodenhof.circleimageview.CircleImageView-->
+                    <!--android:layout_width="70dp"-->
+                    <!--android:layout_height="70dp"-->
+                    <!--android:id="@+id/circleImageView"-->
+                    <!--android:layout_centerHorizontal="true"-->
+                    <!--android:layout_marginTop="20dp"/>-->
+
+                <!--<TextView-->
+                    <!--android:id="@+id/name"-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_marginTop="90dp"-->
+                    <!--android:text="Name"-->
+                    <!--android:textSize="18dp"-->
+                    <!--android:textStyle="bold"-->
+                    <!--android:textColor="@color/white"-->
+                    <!--android:layout_centerHorizontal="true" />-->
+
+                <!--<TextView-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_marginStart="19dp"-->
+                    <!--android:id="@+id/nik"-->
+                    <!--android:text="NIK"-->
+                    <!--android:textSize="13dp"-->
+                    <!--android:textColor="@color/white"-->
+                    <!--android:layout_centerHorizontal="true"-->
+                    <!--android:layout_marginTop="110dp"/>-->
+
+
+                <!--<TextView-->
+                    <!--android:layout_below="@id/bg"-->
+                    <!--android:id="@+id/detailTravelling"-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="55dp"-->
+                    <!--android:layout_marginBottom="10dp"-->
+                    <!--android:gravity="center_vertical"-->
+                    <!--android:paddingLeft="50dp"-->
+                    <!--android:text="DETAIL TRAVELING"-->
+                    <!--android:textColor="@color/orange"-->
+                    <!--android:textSize="17dp"-->
+                    <!--android:textStyle="bold" />-->
+
+                <!--<ImageView-->
+                    <!--android:layout_width="20dp"-->
+                    <!--android:layout_height="20dp"-->
+                    <!--android:layout_above="@+id/view2"-->
+                    <!--android:layout_alignParentStart="true"-->
+                    <!--android:layout_marginBottom="16dp"-->
+                    <!--android:layout_marginStart="21dp"-->
+                    <!--android:background="@drawable/traveling_logo"-->
+                    <!--android:backgroundTint="@color/orange" />-->
+
+                <!--<View-->
+                    <!--android:layout_width="300dp"-->
+                    <!--android:layout_height="0.5dp"-->
+                    <!--android:background="@color/orange"-->
+                    <!--android:layout_alignBottom="@id/detailTravelling"-->
+                    <!--android:id="@+id/view2" />-->
+
+            <!--</RelativeLayout>-->
+
+            <!--<LinearLayout-->
+                <!--android:layout_width="170dp"-->
+                <!--android:layout_height="match_parent"-->
+                <!--android:layout_marginTop="205dp"-->
+                <!--android:paddingTop="5dp"-->
+                <!--android:paddingLeft="20dp"-->
+                <!--android:orientation="vertical">-->
+
+                <!--<LinearLayout-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content">-->
+
+                    <!--<ImageView-->
+                        <!--android:layout_width="27dp"-->
+                        <!--android:layout_height="27dp"-->
+                        <!--android:layout_marginTop="5dp"-->
+                        <!--android:background="@drawable/ic_action_date"-->
+                        <!--android:backgroundTint="@color/item_name"/>-->
+
+
+                    <!--<TextView-->
+                        <!--android:layout_width="wrap_content"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:text="Traveling Date"-->
+                        <!--android:layout_marginTop="8dp"-->
+                        <!--android:textSize="15dp"-->
+                        <!--android:textStyle="bold"/>-->
+                <!--</LinearLayout>-->
+
+                <!--<LinearLayout-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content">-->
+
+                    <!--<ImageView-->
+                        <!--android:layout_width="25dp"-->
+                        <!--android:layout_height="25dp"-->
+                        <!--android:layout_marginTop="8dp"-->
+                        <!--android:background="@drawable/ic_action_from"-->
+                        <!--android:backgroundTint="@color/item_name"/>-->
+
+                    <!--<TextView-->
+                        <!--android:layout_width="wrap_content"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:layout_marginTop="9dp"-->
+                        <!--android:text="From"-->
+                        <!--android:textSize="15dp"-->
+                        <!--android:textStyle="bold"/>-->
+                <!--</LinearLayout>-->
+
+                <!--<LinearLayout-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content">-->
+
+                    <!--<ImageView-->
+                        <!--android:layout_width="25dp"-->
+                        <!--android:layout_height="25dp"-->
+                        <!--android:layout_marginTop="8dp"-->
+                        <!--android:background="@drawable/ic_action_to"-->
+                        <!--android:backgroundTint="@color/item_name"/>-->
+                    <!--<TextView-->
+                        <!--android:layout_width="wrap_content"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:layout_marginTop="9dp"-->
+                        <!--android:text="To"-->
+                        <!--android:textSize="15dp"-->
+                        <!--android:textStyle="bold"/>-->
+                <!--</LinearLayout>-->
+
+                <!--<LinearLayout-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content">-->
+
+                    <!--<ImageView-->
+                        <!--android:layout_width="20dp"-->
+                        <!--android:layout_height="20dp"-->
+                        <!--android:layout_marginTop="8dp"-->
+                        <!--android:background="@drawable/ic_action_total_days"-->
+                        <!--android:backgroundTint="@color/item_name"/>-->
+                    <!--<TextView-->
+                        <!--android:layout_width="wrap_content"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:layout_marginTop="8dp"-->
+                        <!--android:text="Total Days"-->
+                        <!--android:textSize="15dp"-->
+                        <!--android:textStyle="bold"/>-->
+                <!--</LinearLayout>-->
+
+                <!--<LinearLayout-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content">-->
+
+                    <!--<ImageView-->
+                        <!--android:layout_width="25dp"-->
+                        <!--android:layout_height="25dp"-->
+                        <!--android:layout_marginTop="8dp"-->
+                        <!--android:background="@drawable/ic_action_rate"-->
+                        <!--android:backgroundTint="@color/item_name"/>-->
+                    <!--<TextView-->
+                        <!--android:layout_width="wrap_content"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:layout_marginTop="10dp"-->
+                        <!--android:text="Rate"-->
+                        <!--android:textSize="15dp"-->
+                        <!--android:textStyle="bold"/>-->
+                <!--</LinearLayout>-->
+
+                <!--<LinearLayout-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content">-->
+
+                    <!--<ImageView-->
+                        <!--android:layout_width="25dp"-->
+                        <!--android:layout_height="25dp"-->
+                        <!--android:layout_marginTop="8dp"-->
+                        <!--android:background="@drawable/ic_action_budget"-->
+                        <!--android:backgroundTint="@color/item_name"/>-->
+                    <!--<TextView-->
+                        <!--android:layout_width="wrap_content"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:layout_marginTop="10dp"-->
+                        <!--android:text="Budget"-->
+                        <!--android:textSize="15dp"-->
+                        <!--android:textStyle="bold"/>-->
+                <!--</LinearLayout>-->
+
+                <!--<LinearLayout-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content">-->
+
+                    <!--<ImageView-->
+                        <!--android:layout_width="25dp"-->
+                        <!--android:layout_height="25dp"-->
+                        <!--android:layout_marginTop="8dp"-->
+                        <!--android:background="@drawable/ic_action_project"-->
+                        <!--android:backgroundTint="@color/item_name"/>-->
+
+                    <!--<TextView-->
+                        <!--android:layout_width="wrap_content"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:layout_marginTop="10dp"-->
+                        <!--android:text="Project"-->
+                        <!--android:textSize="15dp"-->
+                        <!--android:textStyle="bold"/>-->
+                <!--</LinearLayout>-->
+
+                <!--<LinearLayout-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content">-->
+
+                    <!--<ImageView-->
+                        <!--android:layout_width="25dp"-->
+                        <!--android:layout_height="25dp"-->
+                        <!--android:layout_marginTop="8dp"-->
+                        <!--android:background="@drawable/ic_action_status"-->
+                        <!--android:backgroundTint="@color/item_name"/>-->
+
+                    <!--<TextView-->
+                        <!--android:layout_width="wrap_content"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:layout_marginTop="10dp"-->
+                        <!--android:text="Status"-->
+                        <!--android:textSize="15dp"-->
+                        <!--android:textStyle="bold"/>-->
+                <!--</LinearLayout>-->
+
+                <!--<LinearLayout-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content">-->
+
+                    <!--<ImageView-->
+                        <!--android:layout_width="20dp"-->
+                        <!--android:layout_height="20dp"-->
+                        <!--android:layout_marginTop="8dp"-->
+                        <!--android:background="@drawable/ic_action_note"-->
+                        <!--android:backgroundTint="@color/item_name"/>-->
+
+                    <!--<TextView-->
+                        <!--android:layout_width="wrap_content"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:layout_marginTop="8dp"-->
+                        <!--android:layout_marginLeft="5dp"-->
+                        <!--android:text="Note"-->
+                        <!--android:textSize="15dp"-->
+                        <!--android:textStyle="bold"/>-->
+                <!--</LinearLayout>-->
+
+            <!--</LinearLayout>-->
+
+            <!--<LinearLayout-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="match_parent"-->
+                <!--android:layout_marginTop="205dp"-->
+                <!--android:paddingTop="5dp"-->
+                <!--android:paddingRight="20dp"-->
+                <!--android:layout_marginLeft="170dp"-->
+                <!--android:orientation="vertical">-->
+
+                <!--<TextView-->
+                    <!--android:id="@+id/date"-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_marginTop="8dp"-->
+                    <!--android:text="Date"-->
+                    <!--android:textSize="15dp" />-->
+
+                <!--<TextView-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_marginTop="16dp"-->
+                    <!--android:id="@+id/from"-->
+                    <!--android:text="From" />-->
+
+                <!--<TextView-->
+                    <!--android:id="@+id/to"-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_marginTop="11dp"-->
+                    <!--android:text="To"-->
+                    <!--android:textSize="15dp" />-->
+
+                <!--<TextView-->
+                    <!--android:id="@+id/totalDays"-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_marginTop="13dp"-->
+                    <!--android:text="Total Days"-->
+                    <!--android:textSize="15dp" />-->
+
+                <!--<LinearLayout-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:orientation="horizontal">-->
+
+                    <!--<TextView-->
+                        <!--android:layout_width="wrap_content"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:layout_marginTop="11dp"-->
+                        <!--android:text="Rp."-->
+                        <!--android:textSize="15dp" />-->
+
+                    <!--<TextView-->
+                        <!--android:id="@+id/rate"-->
+                        <!--android:layout_width="wrap_content"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:layout_marginLeft="5dp"-->
+                        <!--android:layout_marginTop="11dp"-->
+                        <!--android:text="Rate"-->
+                        <!--android:textSize="15dp" />-->
+
+                <!--</LinearLayout>-->
+
+                <!--<LinearLayout-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:orientation="horizontal">-->
+
+                    <!--<TextView-->
+                        <!--android:layout_width="wrap_content"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:layout_marginTop="11dp"-->
+                        <!--android:text="Rp."-->
+                        <!--android:textSize="15dp" />-->
+
+
+
+
+                <!--</LinearLayout>-->
+
+                <!--<TextView-->
+                    <!--android:id="@+id/project"-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_marginTop="12dp"-->
+                    <!--android:text="Project"-->
+                    <!--android:textSize="15dp" />-->
+
+                <!--<TextView-->
+                    <!--android:id="@+id/status"-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_marginTop="12dp"-->
+                    <!--android:text="Status"-->
+                    <!--android:textSize="15dp" />-->
+
+
+
+                <!--<RelativeLayout-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content">-->
+
+                <!--&lt;!&ndash;<Button&ndash;&gt;-->
+                <!--&lt;!&ndash;android:id="@+id/paid"&ndash;&gt;-->
+                <!--&lt;!&ndash;android:background="@drawable/roundedcornerbutton"&ndash;&gt;-->
+                <!--&lt;!&ndash;android:backgroundTint="@color/black"&ndash;&gt;-->
+                <!--&lt;!&ndash;android:layout_width="wrap_content"&ndash;&gt;-->
+                <!--&lt;!&ndash;android:layout_alignParentRight="true"&ndash;&gt;-->
+                <!--&lt;!&ndash;android:layout_height="25dp"&ndash;&gt;-->
+                <!--&lt;!&ndash;android:layout_marginTop="30dp"&ndash;&gt;-->
+                <!--&lt;!&ndash;android:textSize="10dp"&ndash;&gt;-->
+                <!--&lt;!&ndash;android:text="Paid"&ndash;&gt;-->
+                <!--&lt;!&ndash;android:layout_marginBottom="50dp"&ndash;&gt;-->
+                <!--&lt;!&ndash;android:textColor="@color/white"/>&ndash;&gt;-->
+
+
+
+
+
+
+            <!--</LinearLayout>-->
+
+
+        <!--</RelativeLayout>-->
+
+    <!--</ScrollView>-->
+
+<!--</android.support.constraint.ConstraintLayout>-->

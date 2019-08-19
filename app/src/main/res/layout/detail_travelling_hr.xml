@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingTop="20dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Detail Travelling"
+            android:textSize="23dp"
+            android:textStyle="bold"
+            android:textColor="@color/orange"
+            android:id="@+id/detailTravelling"
+            android:layout_marginBottom="10dp"/>
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_below="@id/detailTravelling"
+            android:id="@+id/circleImageView" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/detailTravelling"
+            android:layout_marginStart="19dp"
+            android:layout_marginTop="9dp"
+            android:layout_toEndOf="@+id/circleImageView"
+            android:id="@+id/name"
+            android:text="Name"
+            android:textSize="15dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/name"
+            android:layout_marginStart="19dp"
+            android:layout_toEndOf="@+id/circleImageView"
+            android:id="@+id/nik"
+            android:text="NIK"
+            android:textSize="15dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/nik"
+            android:layout_marginStart="19dp"
+            android:layout_toEndOf="@+id/circleImageView"
+            android:id="@+id/from"
+            android:text="From"
+            android:textSize="15dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/from"
+            android:layout_marginStart="19dp"
+            android:layout_toEndOf="@+id/circleImageView"
+            android:id="@+id/to"
+            android:text="To"
+            android:textSize="15dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/to"
+            android:layout_marginStart="19dp"
+            android:layout_toEndOf="@+id/circleImageView"
+            android:id="@+id/totalDays"
+            android:text="Total Days"
+            android:textSize="15dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/totalDays"
+            android:layout_marginStart="19dp"
+            android:layout_toEndOf="@+id/circleImageView"
+            android:id="@+id/rate"
+            android:text="Rate"
+            android:textSize="15dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/rate"
+            android:layout_marginStart="19dp"
+            android:layout_toEndOf="@+id/circleImageView"
+            android:id="@+id/budget"
+            android:text="Budget"
+            android:textSize="15dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/budget"
+            android:layout_marginStart="19dp"
+            android:layout_toEndOf="@+id/circleImageView"
+            android:id="@+id/project"
+            android:text="Project"
+            android:textSize="15dp"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/to"
+            android:layout_below="@+id/project"
+            android:layout_marginEnd="9dp"
+            android:layout_marginTop="78dp"
+            android:text="Reject"
+            android:id="@+id/button2" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/button2"
+            android:layout_alignBottom="@+id/button2"
+            android:layout_toEndOf="@+id/detailTravelling"
+            android:text="Approve" />
+    </RelativeLayout>
+
+</android.support.constraint.ConstraintLayout>

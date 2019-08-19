@@ -1,0 +1,33 @@
+<resources>
+    <string name="app_name">BCS</string>
+    <string name="permission_dialog">Accessing Location Permissions required</string>
+    <string name="go_to_permissions_settings">Go to App settings and enable permissions</string>
+
+    <string-array name="searchStatusTravelling">
+        <item>--All--</item>
+        <item>Send</item>
+        <item>Approve by TL</item>
+        <item>Approve by HR</item>
+        <item>Reject</item>
+        <item>Paid</item>
+    </string-array>
+
+    <string-array name="searchStatusOvertime">
+        <item>--All--</item>
+        <item>Approved</item>
+        <item>Claimed</item>
+        <item>Paid</item>
+        <item>Rejected</item>
+        <item>Unclaimed</item>
+    </string-array>
+
+    <string-array name="chooseDay">
+        <item>Sunday</item>
+        <item>Monday</item>
+        <item>Tuesday</item>
+        <item>Wednesday</item>
+        <item>Thursday</item>
+        <item>Friday</item>
+        <item>Saturday</item>
+    </string-array>
+</resources>
